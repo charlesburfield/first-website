@@ -20,11 +20,13 @@ display: inline-block;
 	font-weight: bold;
 }
 .overlay-text {
-	font-size: 3vw;
+	font-size: 2vw;
 	position: absolute;
-	top: 50px;
-	left: 600px;
+	top: 15%;
+	left: 50%;
 	text-align: center;
+	color: darkblue;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .menu { 
 padding: 20px 0;
