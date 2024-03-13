@@ -9,102 +9,103 @@
 </head>
 
 <body>
-<div class="grid-container">
-    <div class="header">
-        <img src="https://cjburfield.com/images/banner.png" alt="Website banner">
-        <div class="overlay-text">
-        <h1>Best Website!!</h1>
-            </div>
-    </div>
-    <div class="menu">
-        <a href="CV.html">CV</a>
-        <a href="mailto:jingle@jongle.com">Contact</a>
-        <a href="about.html">About</a>
-    </div>
-    <div class="main">
-        <p id="indexfirstp">In the future it will serve as a portfolio website
-            outlining all the projects that I have completed.</p>
-        <p>This website has been created by Charles Burfield</p>
-        <form name="myForm" method="GET">
-            Enter your name:
-            <input type="text" name="usrin" value=""/>
-            <p><input type="range" name="expectedno" min="0" max="5" value="0"
-                      oninput="rangeValue.innerText = this.value"/></p>
-            <p id="rangeValue">0</p>
-            <input type="button" name="userin" value="Sumbit"
-                   onclick="timeOfDay(this.form);expectedresults(this.form);"/>
-
-        </form>
-        <br/>
-        <p id="timeAndOutput">
-            <script>
-                <!--
-                function timeOfDay(form) {
-                    let currentT = new Date();
-                    let hours = currentT.getHours();
-                    let inputValue = form.usrin.value;
-                    let expectednum = form.expectedno.value
-                    let percent = expectednum / 5 * 100
-
-                    if (hours >= 0 && hours < 12) {
-                        document.getElementById("timeAndOutput").innerHTML = ("Good morning " + inputValue);
-                    } else if (hours >= 12 && hours < 18) {
-                        document.getElementById("timeAndOutput").innerHTML = ("Good afternoon " + inputValue);
-                    } else if (hours >= 18 && hours < 21) {
-                        document.getElementById("timeAndOutput").innerHTML = ("Good evening " + inputValue);
-                    } else if (hours >= 21 && hours < 0) {
-                        document.getElementById("timeAndOutput").innerHTML = ("Good night " + inputValue);
-                    }
-                }
-
-                // -->
-            </script>
-        </p>
-        <p id="expectedresult">
-            <script>
-                <!--
-                function expectedresults(form) {
-                    let expectednum = form.expectedno.value
-                    let percent = expectednum / 5 * 100
-
-                    if (percent == 0) {
-                        document.getElementById("expectedresult").innerHTML = (percent + "% are you even going to try?!?!");
-                    } else if (percent == 20) {
-                        document.getElementById("expectedresult").innerHTML = (percent + "% you can do better than that!!");
-                    } else if (percent == 40) {
-                        document.getElementById("expectedresult").innerHTML = (percent + "% thats meh");
-                    } else if (percent == 60) {
-                        document.getElementById("expectedresult").innerHTML = (percent + "% it's ok but not amazing");
-                    } else if (percent == 80) {
-                        document.getElementById("expectedresult").innerHTML = (percent + "% now we are getting there");
-                    } else if (percent == 100) {
-                        document.getElementById("expectedresult").innerHTML = (percent + "% a perfect score, well done!!");
-                    }
-                }
-
-                // -->
-            </script>
-        </p>
-
-        <br/>
-        <br/>
-        <p id="result">
-            <script>
-                <!--
-                let date = document.lastModified;
-                let lastModified = new Date(date);
-                //document.getElementById("result").innerHTML = "The document was last modified on: " + last;
-                document.getElementById("result").innerHTML = ("The document was last modified on: " + lastModified.getDate() + "/" +
-                    (lastModified.getMonth() + 1) + "/" +
-                    lastModified.getFullYear());
-                // -->
-            </script>
-        </p>
-    <br />
-        <p>Here is a lovely image of the <strong>Rockliffe</strong> in Scotland<p/>
-        <img src="https://cjburfield.com/images/rockliffe.jpg" alt="Rockliffe">
+<!-- div class="grid-container"> -->
+<div class="header">
+    <img src="https://cjburfield.com/images/banner.png" alt="Website banner">
+    <div class="overlay-text">
+        <h1 id="head1">Best Website!!</h1>
     </div>
 </div>
+<div class="menu">
+    <a href="CV.html">CV</a>
+    <a href="mailto:jingle@jongle.com">Contact</a>
+    <a href="about.html">About</a>
+</div>
+<div class="main">
+    <p id="indexfirstp">In the future it will serve as a portfolio website
+        outlining all the projects that I have completed.</p>
+    <p>This website has been created by Charles Burfield</p>
+    <form name="myForm" method="GET">
+        Enter your name:
+        <input type="text" name="usrin" value=""/>
+        <p><input type="range" name="expectedno" min="0" max="5" value="0"
+                  oninput="rangeValue.innerText = this.value"/></p>
+        <p id="rangeValue">0</p>
+        <input type="button" name="userin" value="Sumbit"
+               onclick="timeOfDay(this.form);expectedresults(this.form);"/>
+
+    </form>
+    <br/>
+    <p id="timeAndOutput">
+        <script>
+            <!--
+            function timeOfDay(form) {
+                let currentT = new Date();
+                let hours = currentT.getHours();
+                let inputValue = form.usrin.value;
+                let expectednum = form.expectedno.value
+                let percent = expectednum / 5 * 100
+
+                if (hours >= 0 && hours < 12) {
+                    document.getElementById("timeAndOutput").innerHTML = ("Good morning " + inputValue);
+                } else if (hours >= 12 && hours < 18) {
+                    document.getElementById("timeAndOutput").innerHTML = ("Good afternoon " + inputValue);
+                } else if (hours >= 18 && hours < 21) {
+                    document.getElementById("timeAndOutput").innerHTML = ("Good evening " + inputValue);
+                } else if (hours >= 21 && hours < 0) {
+                    document.getElementById("timeAndOutput").innerHTML = ("Good night " + inputValue);
+                }
+            }
+
+            // -->
+        </script>
+    </p>
+    <p id="expectedresult">
+        <script>
+            <!--
+            function expectedresults(form) {
+                let expectednum = form.expectedno.value
+                let percent = expectednum / 5 * 100
+
+                if (percent == 0) {
+                    document.getElementById("expectedresult").innerHTML = (percent + "% are you even going to try?!?!");
+                } else if (percent == 20) {
+                    document.getElementById("expectedresult").innerHTML = (percent + "% you can do better than that!!");
+                } else if (percent == 40) {
+                    document.getElementById("expectedresult").innerHTML = (percent + "% thats meh");
+                } else if (percent == 60) {
+                    document.getElementById("expectedresult").innerHTML = (percent + "% it's ok but not amazing");
+                } else if (percent == 80) {
+                    document.getElementById("expectedresult").innerHTML = (percent + "% now we are getting there");
+                } else if (percent == 100) {
+                    document.getElementById("expectedresult").innerHTML = (percent + "% a perfect score, well done!!");
+                }
+            }
+
+            // -->
+        </script>
+    </p>
+
+    <br/>
+    <br/>
+    <p id="result">
+        <script>
+            <!--
+            let date = document.lastModified;
+            let lastModified = new Date(date);
+            //document.getElementById("result").innerHTML = "The document was last modified on: " + last;
+            document.getElementById("result").innerHTML = ("The document was last modified on: " + lastModified.getDate() + "/" +
+                (lastModified.getMonth() + 1) + "/" +
+                lastModified.getFullYear());
+            // -->
+        </script>
+    </p>
+    <br/>
+    <p>Here is a lovely image of the <strong>Rockliffe</strong> in Scotland
+    <p/>
+    <img src="https://cjburfield.com/images/rockliffe.jpg" alt="Rockliffe">
+</div>
+<!-- </div> -->
 </body>
 
 </html>
