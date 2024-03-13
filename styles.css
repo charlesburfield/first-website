@@ -69,8 +69,10 @@
 
 .main img {
     display: block;
-    width: 65%;
-    height: 65%;
+    /*width: 65%;
+    height: 65%; */
+    max-width: 100%;
+    height: auto;
 }
 
 /* Media queries */
@@ -150,12 +152,6 @@
         background-color: lightgreen;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-
-    .main img {
-        display: block;
-        width: 65%;
-        height: 65%;
-    }
 }
 
 @media screen and (max-width: 980px) {
@@ -233,12 +229,6 @@
         padding: 20px 0;
         background-color: whitesmoke;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .main img {
-        display: block;
-        width: 65%;
-        height: 65%;
     }
 }
 
@@ -319,11 +309,6 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    .main img {
-        display: block;
-        width: 65%;
-        height: 65%;
-    }
 }
 
 @media screen and (max-width: 540px) {
@@ -402,12 +387,6 @@
         background-color: whitesmoke;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-
-    .main img {
-        display: block;
-        width: 65%;
-        height: 65%;
-    }
 }
 
 @media screen and (max-width: 380px) {
@@ -485,11 +464,5 @@
         padding: 20px 0;
         background-color: lightcyan;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .main img {
-        display: block;
-        width: 65%;
-        height: 65%;
     }
 }
